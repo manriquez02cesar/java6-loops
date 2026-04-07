@@ -1,10 +1,9 @@
 package retos;
 
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Reto1 {
+public class RetoNumeroGanador {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Preguntar cuantos participantes estaran dentro del programa
