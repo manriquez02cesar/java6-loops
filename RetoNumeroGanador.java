@@ -32,8 +32,12 @@ public class RetoNumeroGanador {
 
 
         Random rd = new Random();
-        int boletoGanador = rd.nextInt(participantes);
+        int boletoGanador;
+        do{
+            boletoGanador = rd.nextInt(participantes);
+        }while (boletoGanador == 0);
         System.out.println("El boleto ganador es el numero " + boletoGanador);
+
 
     }
 }

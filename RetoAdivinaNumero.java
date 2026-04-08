@@ -16,9 +16,8 @@ public class RetoAdivinaNumero {
         int elije = 0;
 
 
-
         Random rd = new Random();
-        int numAdi = rd.nextInt(10);;
+        int numAdi = rd.nextInt(10);
 
         do {
             System.out.println("Los numeros a adivinar son los siguientes");
