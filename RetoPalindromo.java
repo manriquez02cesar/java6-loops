@@ -6,12 +6,17 @@ import java.util.Scanner;
 public class RetoPalindromo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese una palabra o frase desada");
-        String palabra = sc.next()
+        System.out.println("Ingrese una palabra");
+
+        //Ingresa la palabra
+        String palabra = sc.nextLine()
                 .toLowerCase();
 
+        //En caso de que sea frase
+        String salida = palabra.replace(" ", "").replace(",", "");
+
         //Conviertiendo de string a arreglo
-        char[] letras = palabra.toCharArray();
+        char[] letras = salida.toCharArray();
         //Añadiendo un nuevo arrego para guardar la palabra polindroma
         char[] letrasAct = new char[letras.length];
 
